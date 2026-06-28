@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>MyApp Docs</title>
+
+    <link rel="stylesheet" href="css/style2.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="topbar">
+      <div class="left">
+        <button id="menuBtn">☰</button>
+
+        <div class="logo">MyApp Docs</div>
+      </div>
+
+      <div class="right">
+        <input type="text" placeholder="Search docs..." class="search" />
+
+        <button id="themeBtn">🌙</button>
+
+        <a href="#"> GitHub </a>
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar" id="sidebar">
+        <div class="section">
+          <h3>Getting Started</h3>
+
+          <a class="active" href="#">Introduction</a>
+          <a href="#">Installation</a>
+          <a href="#">Quick Start</a>
+        </div>
+
+        <div class="section">
+          <h3>Guides</h3>
+
+          <a href="#">Authentication</a>
+          <a href="#">Database</a>
+          <a href="#">Storage</a>
+          <a href="#">Notifications</a>
+        </div>
+
+        <div class="section">
+          <h3>Components</h3>
+
+          <a href="#">Buttons</a>
+          <a href="#">Cards</a>
+          <a href="#">Dialogs</a>
+          <a href="#">Navigation</a>
+        </div>
+
+        <div class="section">
+          <h3>API</h3>
+
+          <a href="#">Overview</a>
+          <a href="#">Classes</a>
+          <a href="#">Enums</a>
+          <a href="#">Methods</a>
+        </div>
+      </aside>
+
+      <main class="content">
+        <h1>Getting Started</h1>
+
+        <p>
+          Welcome to the documentation for <strong>MyApp</strong>. This template
+          is inspired by Flutter's documentation layout.
+        </p>
+
+        <h2>Installation</h2>
+
+        <p>Install using npm.</p>
+
+        <div class="code">
+          <button class="copy">Copy</button>
+
+          <pre><code>
+npm install myapp
+</code></pre>
+        </div>
+
+        <h2>Usage</h2>
+
+        <p>Import the package.</p>
+
+        <div class="code">
+          <button class="copy">Copy</button>
+
+          <pre><code>
+import 'package:myapp/myapp.dart';
+</code></pre>
+        </div>
+
+        <h2>Example</h2>
+
+        <p>Create your application.</p>
+
+        <div class="code">
+          <button class="copy">Copy</button>
+
+          <pre><code>
+void main() {
+
+    runApp(
+        MyApp()
+    );
+
+}
+</code></pre>
+        </div>
+
+        <div class="pager">
+          <button>← Previous</button>
+
+          <button>Next →</button>
+        </div>
+      </main>
+
+      <aside class="toc">
+        <h4>On this page</h4>
+
+        <a href="#">Installation</a>
+
+        <a href="#">Usage</a>
+
+        <a href="#">Example</a>
+      </aside>
+    </div>
+
+    <script src="js/myscripts.js"></script>
+  </body>
+</html>

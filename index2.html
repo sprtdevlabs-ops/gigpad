@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Premium SEO Meta Structure -->
+    <title>Free Chords Over Lyrics to ChordPro Converter | SPRT Digital</title>
+    <meta
+      name="description"
+      content="Instantly convert standard chord-over-lyrics charts into clean ChordPro format. Free, fully responsive, and optimized for mobile stage displays."
+    />
+    <meta
+      name="keywords"
+      content="chordpro converter, chords over lyrics, text to chordpro, ultimate guitar converter, chord wrapper, gigpad format"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>CHORD SHEET TO CHORDPRO <span>CONVERTER</span></h1>
+        <p>Convert standard chords-over-lyrics text sheets instantly</p>
+      </header>
+
+      <!-- Top Banner Ad Unit -->
+      <div class="ad-slot top-banner">
+        <!-- Paste Google AdSense Leaderboard Script Code Here -->
+        Advertisement (Leaderboard 728x90)
+      </div>
+
+      <div class="editor-grid">
+        <!-- Input Pane -->
+        <div class="pane">
+          <div class="pane-header">
+            <label for="input">Paste Chords-Over-Lyrics</label>
+            <button class="btn-clear" onclick="clearFields()">Clear</button>
+          </div>
+          <textarea
+            id="input"
+            oninput="handleConversion()"
+            placeholder="C         G&#10;Yesterday all my troubles seemed so far away..."
+          ></textarea>
+        </div>
+
+        <!-- Output Pane -->
+        <div class="pane">
+          <div class="pane-header">
+            <label for="output">ChordPro Output</label>
+            <button class="btn-clear" onclick="clearFields()">Clear</button>
+          </div>
+          <textarea
+            id="output"
+            readonly
+            placeholder="[C]Yesterday [G]all my troubles seemed so far away..."
+          ></textarea>
+        </div>
+      </div>
+
+      <div class="action-bar">
+        <button id="copyBtn" class="btn-main" onclick="copyToClipboard()">
+          Copy Output
+        </button>
+      </div>
+
+      <!-- Inline Display Ad Unit -->
+      <div class="ad-slot inline-banner">
+        <!-- Paste Google AdSense Display Unit Script Code Here -->
+        Advertisement (Inline Square 300x250)
+      </div>
+
+      <!-- SEO Editorial Landing Content Block -->
+      <article>
+        <h2>How to Convert Chords Over Lyrics to ChordPro</h2>
+        <p>
+          Our free text conversion tool automatically scans your documents to
+          isolate rows containing musical keys like <code>Cmaj7</code>,
+          <code>D#m</code>, or <code>G/B</code>. By computing the
+          character-offset coordinates of each chord token relative to the
+          sentence underneath, it embeds the musical shorthand directly into
+          native ChordPro brackets <code>[ ]</code> seamlessly.
+        </p>
+        <h3>Why use the ChordPro Format?</h3>
+        <p>
+          Standard chord charts rely heavily on spaces to align notation above
+          text. While this layout functions on full-size paper printouts, it
+          fails on mobile devices. When lines auto-wrap on tiny screens, the
+          chords lose alignment completely. Embellishing songs in the ChordPro
+          framework anchors chords inside words, ensuring formatting scales
+          dynamically across smartphones, tablet devices, and gigging
+          performance apps.
+        </p>
+      </article>
+    </div>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
