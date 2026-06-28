@@ -1,0 +1,470 @@
+/* ==========================================
+   RESET
+========================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #ffffff;
+  color: #202124;
+  line-height: 1.7;
+}
+
+/* ==========================================
+   LINKS
+========================================== */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ==========================================
+   TOP BAR
+========================================== */
+
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+
+  background: white;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 24px;
+
+  border-bottom: 1px solid #e8e8e8;
+
+  z-index: 1000;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1976d2;
+}
+
+.search {
+  width: 250px;
+  padding: 10px 14px;
+
+  border: 1px solid #ddd;
+  border-radius: 10px;
+
+  outline: none;
+  transition: 0.2s;
+}
+
+.search:focus {
+  border-color: #1976d2;
+}
+
+#menuBtn,
+#themeBtn {
+  border: none;
+  background: none;
+
+  font-size: 22px;
+  cursor: pointer;
+
+  padding: 8px;
+  border-radius: 8px;
+}
+
+#menuBtn:hover,
+#themeBtn:hover {
+  background: #efefef;
+}
+
+/* ==========================================
+   MAIN LAYOUT
+========================================== */
+
+.layout {
+  display: grid;
+
+  grid-template-columns:
+    270px
+    1fr
+    240px;
+
+  margin-top: 64px;
+
+  min-height: calc(100vh - 64px);
+}
+
+/* ==========================================
+   SIDEBAR
+========================================== */
+
+.sidebar {
+  border-right: 1px solid #ececec;
+
+  padding: 28px 20px;
+
+  position: sticky;
+  top: 64px;
+
+  height: calc(100vh - 64px);
+
+  overflow-y: auto;
+
+  background: white;
+}
+
+.sidebar h3 {
+  margin-bottom: 12px;
+
+  font-size: 13px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+
+  color: #888;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.sidebar a {
+  display: block;
+
+  padding: 10px 14px;
+
+  margin-bottom: 4px;
+
+  border-radius: 8px;
+
+  color: #444;
+
+  transition: 0.18s;
+}
+
+.sidebar a:hover {
+  background: #f3f5f7;
+
+  color: #1976d2;
+}
+
+.sidebar a.active {
+  background: #e8f2ff;
+
+  color: #1976d2;
+
+  font-weight: 600;
+}
+
+/* ==========================================
+   CONTENT
+========================================== */
+
+.content {
+  padding: 60px;
+
+  max-width: 900px;
+}
+
+.content h1 {
+  font-size: 42px;
+
+  margin-bottom: 18px;
+}
+
+.content h2 {
+  margin-top: 48px;
+
+  margin-bottom: 18px;
+
+  font-size: 28px;
+}
+
+.content p {
+  color: #555;
+
+  margin-bottom: 20px;
+}
+
+/* ==========================================
+   CODE BLOCKS
+========================================== */
+
+.code {
+  position: relative;
+
+  margin: 28px 0;
+}
+
+.code pre {
+  background: #111827;
+
+  color: white;
+
+  border-radius: 14px;
+
+  padding: 24px;
+
+  overflow: auto;
+
+  font-size: 15px;
+}
+
+.code code {
+  font-family: Consolas, monospace;
+}
+
+.copy {
+  position: absolute;
+
+  top: 14px;
+
+  right: 14px;
+
+  border: none;
+
+  background: #1976d2;
+
+  color: white;
+
+  padding: 8px 14px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+}
+
+.copy:hover {
+  opacity: 0.9;
+}
+
+/* ==========================================
+   TOC
+========================================== */
+
+.toc {
+  border-left: 1px solid #ececec;
+
+  padding: 32px 20px;
+
+  position: sticky;
+
+  top: 64px;
+
+  height: calc(100vh - 64px);
+}
+
+.toc h4 {
+  margin-bottom: 14px;
+
+  color: #777;
+}
+
+.toc a {
+  display: block;
+
+  margin-bottom: 10px;
+
+  color: #666;
+}
+
+.toc a:hover {
+  color: #1976d2;
+}
+
+/* ==========================================
+   PAGER
+========================================== */
+
+.pager {
+  display: flex;
+
+  justify-content: space-between;
+
+  margin-top: 80px;
+}
+
+.pager button {
+  border: none;
+
+  background: #1976d2;
+
+  color: white;
+
+  padding: 14px 24px;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+}
+
+.pager button:hover {
+  background: #1565c0;
+}
+
+/* ==========================================
+   SCROLLBAR
+========================================== */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cfcfcf;
+
+  border-radius: 100px;
+}
+
+/* ==========================================
+   DARK MODE
+========================================== */
+
+body.dark {
+  background: #121212;
+
+  color: #eee;
+}
+
+body.dark .topbar {
+  background: #1c1c1c;
+
+  border-color: #333;
+}
+
+body.dark .sidebar {
+  background: #181818;
+
+  border-color: #333;
+}
+
+body.dark .toc {
+  background: #181818;
+
+  border-color: #333;
+}
+
+body.dark .content p {
+  color: #cfcfcf;
+}
+
+body.dark .search {
+  background: #222;
+
+  color: white;
+
+  border-color: #444;
+}
+
+body.dark .sidebar a {
+  color: #ccc;
+}
+
+body.dark .sidebar a:hover {
+  background: #252525;
+}
+
+body.dark .sidebar a.active {
+  background: #204c82;
+}
+
+body.dark #menuBtn,
+body.dark #themeBtn {
+  color: white;
+}
+
+body.dark .logo {
+  color: #64b5ff;
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 1100px) {
+  .layout {
+    grid-template-columns: 260px 1fr;
+  }
+
+  .toc {
+    display: none;
+  }
+}
+
+@media (max-width: 850px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: fixed;
+
+    left: -280px;
+
+    top: 64px;
+
+    width: 270px;
+
+    transition: 0.25s;
+
+    z-index: 999;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+
+  .sidebar.open {
+    left: 0;
+  }
+
+  .content {
+    padding: 30px;
+  }
+
+  .search {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .content {
+    padding: 24px;
+  }
+
+  .content h1 {
+    font-size: 34px;
+  }
+
+  .content h2 {
+    font-size: 24px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+}
